@@ -1,0 +1,39 @@
+.list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 7px;
+}
+
+.listitem , li {
+    display: inline-block;
+}
+
+.listitem a::after {
+    display: inline-block;
+    content: ">";
+    color: black;
+    padding: 0 3px;
+}
+
+a:visited {
+    color: black;
+}
+
+a:link {
+    color: black;
+}
+
+a:hover {
+    color: white;
+}
+
+nav {
+    background-color: lightgrey;
+}
+
+
+header {
+    width: 100%;
+}
+

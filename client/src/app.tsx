@@ -1,15 +1,12 @@
 import './css/app.css';
-import { useEffect } from 'react';
+import Router from './router.tsx';
 
 function App() {
 
-    useEffect(() => {
-        fetch('/api/test.php')
-        .then(res => res.json())
-        .then(data => console.log(data));
-  }, []);  
 
-    return <h1>WELCOME</h1>;
+    return ( 
+        <Router />
+    );
 }
 
 export default App;

@@ -1,0 +1,16 @@
+img {
+    width: 500px;
+    height:500px;
+    border-radius: 15px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: solid black 2px;
+    padding: 10px;
+    margin: 5px 5px;
+    border-radius:15px;
+    align-items:center;
+    background-color:darkgrey;
+  }

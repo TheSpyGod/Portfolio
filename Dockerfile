@@ -1,13 +1,12 @@
 FROM php:8.2-cli as php 
 
-RUN apt-get update && apt-get install -y libpq-dev \
-    && docker-php-ext-install pdo pdo_pgsql pgsql
+RUN apt-get update
 
 WORKDIR /var/www/html
 
 RUN mkdir -p php
 
-COPY tests/test.php ./php/test.php
+COPY server/src/* ./php/
 
 EXPOSE 8082
 
