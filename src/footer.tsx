@@ -4,10 +4,16 @@ function Footer() {
 
     return (
         <footer>
-            <h3> Contact info: </h3>
-            <h4>gabriel.korczyk@outlook.com</h4>
-            <h4>+48 517 299 140</h4>
+          <p className="footer-contact">
+            <a href="mailto:gabriel.korczyk@outlook.com">gabriel.korczyk@outlook.com</a>
+            &nbsp;·&nbsp;
+            <a href="#">LinkedIn</a>
+            &nbsp;·&nbsp;
+            <a href="#">GitHub</a>
+          </p>
+          <p className="footer-copy">2025</p>
         </footer>
+
   );
 }
 

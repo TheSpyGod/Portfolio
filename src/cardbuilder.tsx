@@ -8,9 +8,7 @@ function CardBuilder({ data }) {
         {data
             .filter(item => item.description?.length > 1 && item.fork === false && item.name != "Portfolio" && item.name != "AGame" && item.name != "AdventureGame" && item.name != "comfortProjects" )
             .map(item => (
-            <li key={item.id}> 
                 <Card title={item.name} description={item.description} html_url={item.url}/>
-            </li>
         ))}
     </ul>
     );

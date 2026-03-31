@@ -1,16 +1,124 @@
-img {
-    width: 500px;
-    height:500px;
-    border-radius: 15px;
-}
 
-.card {
+.projects {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 3rem 6rem;
     display: flex;
     flex-direction: column;
-    border: solid black 2px;
-    padding: 10px;
-    margin: 5px 5px;
-    border-radius:15px;
-    align-items:center;
-    background-color:darkgrey;
+    gap: 1px;
+    border: 1px solid var(--border);
   }
+
+  .project-card {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    transition: background 0.2s;
+    text-decoration: none;
+    color: inherit;
+    min-height: 220px;
+  }
+
+  .project-card:last-child { border-bottom: none; }
+
+  .project-card:hover {
+    background: #181818;
+  }
+
+  .project-card:hover .project-arrow {
+    transform: translateX(4px);
+    color: var(--gold);
+  }
+
+  .project-info {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid var(--border);
+  }
+
+  .project-index {
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    color: var(--gold-dim);
+    margin-bottom: 1rem;
+  }
+
+  .project-title {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+  }
+
+  .project-subtitle {
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.05em;
+    margin-bottom: 1.5rem;
+  }
+
+  .project-stack {
+    display: flex; flex-wrap: wrap; gap: 0.4rem;
+  }
+
+  .stack-pill {
+    font-size: 9px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.6rem;
+    border: 1px solid var(--border);
+    color: var(--muted);
+  }
+
+  .project-visual {
+    position: relative;
+    overflow: hidden;
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project-visual img {
+    width: 100%;
+  height: 100%;
+  object-fit: none;
+  position: absolute;
+    opacity: 0.7;
+    transition: opacity 0.3s, transform 0.4s;
+  }
+
+  .project-card:hover .project-visual img {
+    opacity: 0.9;
+    transform: scale(1.02);
+  }
+
+  .project-visual-placeholder {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    min-height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-display);
+    font-size: 4rem;
+    color: var(--border);
+    letter-spacing: 0.1em;
+  }
+
+  .project-arrow {
+    position: absolute;
+    bottom: 1.2rem;
+    right: 1.5rem;
+    font-size: 1.2rem;
+    color: var(--muted);
+    transition: transform 0.2s, color 0.2s;
+  }
+
+

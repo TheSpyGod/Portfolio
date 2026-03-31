@@ -1,11 +1,42 @@
-footer {
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 2rem 3rem;
+    max-width: 860px;
+    margin: 0 auto;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    background-color: lightgrey;
-}
+  }
 
-footer h4, h3  {
-    color: black;
-    font-weight: normal;
-}
+  .footer-contact {
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .footer-contact a {
+    color: var(--gold);
+    text-decoration: none;
+  }
+
+  .footer-copy {
+    font-size: 10px;
+    color: var(--border);
+    letter-spacing: 0.1em;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 640px) {
+    nav { padding: 1.2rem 1.5rem; }
+    .nav-links { gap: 1.5rem; }
+    .hero, .section-header, .projects, .contribution, footer {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+    .project-card { grid-template-columns: 1fr; }
+    .project-info { border-right: none; border-bottom: 1px solid var(--border); }
+    .project-visual-placeholder { min-height: 160px; }
+    .contribution-card { flex-direction: column; }
+  }
+

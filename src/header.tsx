@@ -2,17 +2,14 @@ import './css/header.css';
 function Header() {
 
     return (
-        <header>
             <nav>
-                <ol className="list">
-                
-                    <li className="listitem"><a href="./">Home</a></li>
-                    <li className="listitem"><a href="/Portfolio/projects">Projects</a></li>
-                    <li><a href="#">Certifications</a></li>
-
-                </ol>
+              <a className="nav-logo" href="#">G. Korczyk</a>
+              <ul className="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="projects" className="active">Projects</a></li>
+                <li><a href="#">Certifications</a></li>
+              </ul>
             </nav>
-        </header>
   );
 }
 

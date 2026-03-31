@@ -1,4 +1,5 @@
 import './css/projects.css';
+import Contributions from './contributions.tsx';
 import CardBuilder from './cardbuilder.tsx';
 import { useState, useEffect } from 'react';
 
@@ -34,9 +35,10 @@ function Projects() {
   }, []);  
 
     return (
-        <div>
-            < CardBuilder data={data.map(trimRepo)} />
-        </div>
+    <section>
+        <Contributions />
+        <CardBuilder data={data.map(trimRepo)} />
+    </section>
     );
   
 }

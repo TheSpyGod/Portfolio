@@ -1,9 +1,37 @@
-body {
-  width: 100%;
-  height: 100%;
-  background-color: grey;
-}
+ :root {
+    --bg:       #0d0d0d;
+    --surface:  #141414;
+    --border:   #222222;
+    --gold:     #c9a84c;
+    --gold-dim: #7a6230;
+    --text:     #e8e2d9;
+    --muted:    #6b6560;
+    --font-display: 'Cormorant Garamond', Georgia, serif;
+    --font-mono:    'JetBrains Mono', monospace;
+  }
 
-h1, h2, h3, h4, h5 {
-  color: white;
-}
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-mono);
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+ @media (max-width: 640px) {
+    nav { padding: 1.2rem 1.5rem; }
+    .nav-links { gap: 1.5rem; }
+    .hero, .section-header, .projects, .contribution, footer {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+    .project-card { grid-template-columns: 1fr; }
+    .project-info { border-right: none; border-bottom: 1px solid var(--border); }
+    .project-visual-placeholder { min-height: 160px; }
+    .contribution-card { flex-direction: column; }
+  }
+
