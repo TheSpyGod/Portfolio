@@ -6,23 +6,23 @@ import Hero from './hero.tsx';
 
 function Router() {
 
-    return (
+  return (
     <div>
-        <Header /> 
-      
-        <Hero/>
+      <Header />
 
-        <BrowserRouter basename="/Portfolio/">
-            <Routes>
-                <Route path="/projects" element={<Projects />} />
-                <Route path="/certifications" element={<Projects />} />
-            </Routes>
-        
-        </BrowserRouter>
-        
-        <Footer />
+      <Hero />
+
+      <BrowserRouter basename="/Portfolio/">
+        <Routes>
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/certifications" element={<Projects />} />
+        </Routes>
+
+      </BrowserRouter>
+
+      <Footer />
     </div>
-    );
+  );
 }
 
 export default Router;

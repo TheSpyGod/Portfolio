@@ -1,13 +1,16 @@
- :root {
+  @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap'); 
+
+  :root {
     --bg:       #0d0d0d;
     --surface:  #141414;
     --border:   #222222;
-    --gold:     #c9a84c;
-    --gold-dim: #7a6230;
+    --gold:     #09b4f7;
+    --gold-original:     #c9a84c;
+    --gold-dim: #179ed3;
     --text:     #e8e2d9;
     --muted:    #6b6560;
-    --font-display: 'Cormorant Garamond', Georgia, serif;
-    --font-mono:    'JetBrains Mono', monospace;
+    --font-display: "Titillium Web", sans-serif;
+    --font-mono:    'Titillium Web', sans-serif;
   }
 
   html { scroll-behavior: smooth; }
